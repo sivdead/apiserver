@@ -8,6 +8,7 @@ import (
 	"github.com/sivdead/apiserver/config"
 	"github.com/sivdead/apiserver/pkg/constant"
 	"github.com/sivdead/apiserver/model"
+	"github.com/sivdead/apiserver/router/middleware"
 	
 	"github.com/gin-gonic/gin"
 	"github.com/lexkong/log"
@@ -31,15 +32,15 @@ func main() {
 	// Create the Gin engine.
 	g := gin.New()
 	
-	middlewares := []gin.HandlerFunc{}
-	
 	// Routes.
 	router.Load(
 		// Cores.
 		g,
 		
 		// middlewares.
-		middlewares...,
+		middleware.RequestId(),
+		middleware.Logging(),
+		middleware.AuthMiddleware(),
 	)
 	
 	// init db

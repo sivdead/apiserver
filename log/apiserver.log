@@ -111,3 +111,38 @@
 {"level":"INFO","timestamp":"2018-07-02 00:28:53.601","file":"user/create.go:15","msg":"User Create function called.","data":{"X-Request-Id":""}}
 {"level":"ERROR","timestamp":"2018-07-02 00:28:57.045","file":"user/create.go:40","msg":"create user error","data":{"error":"Error 1062: Duplicate entry 'admin' for key 'username'"}}
 {"level":"INFO","timestamp":"2018-07-02 00:29:13.808","file":"user/create.go:15","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"DEBUG","timestamp":"2018-07-02 12:52:29.935","file":"apiserver/main.go:57","msg":"Start to listening the incoming requests on http address: :6663"}
+{"level":"DEBUG","timestamp":"2018-07-02 12:52:30.546","file":"apiserver/main.go:54","msg":"The router has been deployed successfully."}
+{"level":"DEBUG","timestamp":"2018-07-03 00:00:59.444","file":"apiserver/main.go:58","msg":"Start to listening the incoming requests on http address: :6663"}
+{"level":"DEBUG","timestamp":"2018-07-03 00:00:59.949","file":"apiserver/main.go:55","msg":"The router has been deployed successfully."}
+{"level":"DEBUG","timestamp":"2018-07-03 00:02:23.086","file":"apiserver/main.go:57","msg":"Start to listening the incoming requests on http address: :6663"}
+{"level":"DEBUG","timestamp":"2018-07-03 00:02:23.592","file":"apiserver/main.go:54","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2018-07-03 00:02:34.629","file":"middleware/logging.go:76","msg":"response body can not unmarshal to model.Response struct, body: ``","data":{"error":"unexpected end of JSON input"}}
+{"level":"INFO","timestamp":"2018-07-03 00:02:34.629","file":"middleware/logging.go:84","msg":"0s            | [::1]:55580  | GET /v1/user | {code: 10001, message: unexpected end of JSON input}"}
+{"level":"DEBUG","timestamp":"2018-07-03 00:03:09.033","file":"apiserver/main.go:57","msg":"Start to listening the incoming requests on http address: :6663"}
+{"level":"DEBUG","timestamp":"2018-07-03 00:03:09.538","file":"apiserver/main.go:54","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2018-07-03 00:03:17.403","file":"middleware/logging.go:84","msg":"5.5706618s    | [::1]:55605  | GET /v1/user | {code: 0, message: OK}"}
+{"level":"DEBUG","timestamp":"2018-07-03 00:21:51.679","file":"config/config.go:37","msg":"Config file changed: C:\\Users\\jinwen.luo\\go\\src\\github.com\\sivdead\\apiserver\\conf\\config.yaml"}
+{"level":"DEBUG","timestamp":"2018-07-03 00:22:01.169","file":"config/config.go:37","msg":"Config file changed: C:\\Users\\jinwen.luo\\go\\src\\github.com\\sivdead\\apiserver\\conf\\config.yaml"}
+{"level":"DEBUG","timestamp":"2018-07-03 00:22:06.395","file":"config/config.go:37","msg":"Config file changed: C:\\Users\\jinwen.luo\\go\\src\\github.com\\sivdead\\apiserver\\conf\\config.yaml"}
+{"level":"DEBUG","timestamp":"2018-07-03 00:22:12.818","file":"config/config.go:37","msg":"Config file changed: C:\\Users\\jinwen.luo\\go\\src\\github.com\\sivdead\\apiserver\\conf\\config.yaml"}
+{"level":"DEBUG","timestamp":"2018-07-03 00:52:23.506","file":"apiserver/main.go:58","msg":"Start to listening the incoming requests on http address: :6663"}
+{"level":"DEBUG","timestamp":"2018-07-03 00:52:23.509","file":"apiserver/main.go:55","msg":"The router has been deployed successfully."}
+{"level":"DEBUG","timestamp":"2018-07-03 00:52:23.558","file":"apiserver/main.go:59","msg":"listen tcp :6663: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+{"level":"DEBUG","timestamp":"2018-07-03 00:52:43.959","file":"apiserver/main.go:58","msg":"Start to listening the incoming requests on http address: :6663"}
+{"level":"DEBUG","timestamp":"2018-07-03 00:52:44.465","file":"apiserver/main.go:55","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2018-07-03 00:53:54.911","file":"middleware/logging.go:84","msg":"0s            | [::1]:56507  | POST /v1/user/login | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2018-07-03 00:55:11.390","file":"middleware/logging.go:84","msg":"0s            | [::1]:56507  | POST /v1/user/login | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2018-07-03 00:58:21.716","file":"middleware/logging.go:84","msg":"0s            | [::1]:56507  | POST /v1/user/login | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2018-07-03 00:58:28.974","file":"middleware/logging.go:84","msg":"967.7µs       | [::1]:56507  | POST /v1/user/login | {code: 20103, message: The token was invalid.}"}
+{"level":"DEBUG","timestamp":"2018-07-03 01:00:16.290","file":"apiserver/main.go:58","msg":"Start to listening the incoming requests on http address: :6663"}
+{"level":"DEBUG","timestamp":"2018-07-03 01:00:16.796","file":"apiserver/main.go:55","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2018-07-03 01:00:20.526","file":"middleware/logging.go:84","msg":"8.0221ms      | [::1]:56553  | POST /v1/user/login | {code: 20103, message: The token was invalid.}"}
+{"level":"DEBUG","timestamp":"2018-07-03 01:01:38.547","file":"apiserver/main.go:58","msg":"Start to listening the incoming requests on http address: :6663"}
+{"level":"DEBUG","timestamp":"2018-07-03 01:01:39.054","file":"apiserver/main.go:55","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2018-07-03 01:01:51.257","file":"middleware/logging.go:84","msg":"966.3µs       | [::1]:56592  | POST /login | {code: 20103, message: The token was invalid.}"}
+{"level":"DEBUG","timestamp":"2018-07-03 01:03:21.537","file":"apiserver/main.go:58","msg":"Start to listening the incoming requests on http address: :6663"}
+{"level":"DEBUG","timestamp":"2018-07-03 01:03:22.043","file":"apiserver/main.go:55","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2018-07-03 01:03:49.015","file":"middleware/logging.go:84","msg":"8.0976046s    | [::1]:56643  | POST /login | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-07-03 01:04:01.706","file":"middleware/logging.go:84","msg":"2.2777115s    | [::1]:56643  | POST /login | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-07-03 01:04:58.604","file":"middleware/logging.go:84","msg":"3.6966288s    | [::1]:56643  | GET /v1/user | {code: 0, message: OK}"}
