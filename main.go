@@ -19,11 +19,16 @@ import (
 
 var (
 	cfg = pflag.StringP("config", "c", "", "apiserver config file path.")
+	version = pflag.BoolP("version","v",false,"show version info.")
 )
 
 func main() {
 	
 	pflag.Parse()
+	
+	if *version{
+	
+	}
 	
 	if err := config.Init(*cfg); err != nil {
 		panic(err)

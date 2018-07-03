@@ -30,11 +30,17 @@ func Create(c *gin.Context) {
 		return
 	}
 	
+	if count := model.CountUser(r.Username); count != 0{
+		SendResponse(c, errno.ErrUserExist, nil)
+		return
+	}
+	
 	// Encrypt the user password.
 	if err := u.Encrypt(); err != nil {
 		SendResponse(c, errno.ErrEncrypt, nil)
 		return
 	}
+	
 	// Insert the user to the database.
 	if err := u.Create(); err != nil {
 		log.Errorf(err,"create user error")

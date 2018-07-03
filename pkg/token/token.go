@@ -78,7 +78,7 @@ func ParseRequest(c *gin.Context) (*Context, error) {
 }
 
 // Sign signs the context with the specified secret.
-func Sign(ctx *gin.Context, c Context, secret string) (tokenString string, err error) {
+func Sign(c Context, secret string) (tokenString string, err error) {
 	// Load the jwt secret from the Gin config if the secret isn't specified.
 	if secret == "" {
 		secret = viper.GetString("security.jwt_secret")

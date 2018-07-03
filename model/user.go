@@ -44,6 +44,13 @@ func GetUser(username string) (*UserModel, error) {
 	return u, d.Error
 }
 
+func CountUser(username string)(int)  {
+	var count int
+	u := &UserModel{}
+	DB.Self.Where("username = ?", username).Find(&u).Count(&count)
+	return count
+}
+
 // ListUser List all users
 func ListUser(username string, offset, limit int) ([]*UserModel, uint64, error) {
 	if limit == 0 {

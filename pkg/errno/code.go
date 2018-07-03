@@ -8,6 +8,7 @@ var (
 	
 	// user errors
 	ErrUserNotFound = &Errno{Code: 20102, Message: "The user was not found."}
+	ErrUserExist = &Errno{Code: 20103, Message: "The user was existed."}
 	
 	ErrValidation       = &Errno{Code: 20001, Message: "Validation failed."}
 	ErrDatabase         = &Errno{Code: 20002, Message: "Database error."}
