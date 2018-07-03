@@ -3,7 +3,9 @@ addr: :6663                  # HTTP绑定端口
 name: apiserver              # API Server的名字
 url: http://127.0.0.1:6663   # pingServer函数请求的API服务器的ip:port
 max_ping_count: 10           # pingServer函数尝试的次数...
-jwt_secret: ashdjaodoahsdioahsdhos788iuh8&&^%yhskadh
+security:
+  token_expire_time: 3600
+  jwt_secret: ashdjaodoahsdioahsdhos788iuh8&&^%yhskadh
 log:
   writers: file,stdout
   logger_level: DEBUG
